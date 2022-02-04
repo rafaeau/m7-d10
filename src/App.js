@@ -8,9 +8,9 @@ function App() {
     <div className="App">
       <header className="App-header">
         <div className='container'>
-          <h3 className='my-3'>Weather App</h3>
+          <h3 className='mb-5'>Weather App</h3>
           <div className='row'>
-            <div className='col-6'>
+            <div className='col-6 pr-5'>
               <ChooseCity />
             </div>
             <div className='col-6'>
