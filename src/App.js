@@ -1,22 +1,23 @@
-import logo from './logo.svg';
+import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css';
+import ChooseCity from './components/ChooseCity'
+import ShowCity from './components/ShowCity'
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <div className='container'>
+          <h3 className='my-3'>Weather App</h3>
+          <div className='row'>
+            <div className='col-6'>
+              <ChooseCity />
+            </div>
+            <div className='col-6'>
+              <ShowCity />
+            </div>
+          </div>
+        </div>
       </header>
     </div>
   );
